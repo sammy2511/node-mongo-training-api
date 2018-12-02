@@ -8,12 +8,12 @@ var Note = mongoose.model('Note',{
     trim:true
   },
   createdOn:{
-      type:String,
+      type:Date,
       required:true,
       trim:true
   },
   lastModifiedOn:{
-      type:String,
+      type:Date,
       required:true,
       trim:true
   }
