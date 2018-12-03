@@ -16,6 +16,10 @@ var Note = mongoose.model('Note',{
       type:Date,
       required:true,
       trim:true
+  },
+  isActive:{
+    type:Boolean,
+    default:true
   }
 });
 
