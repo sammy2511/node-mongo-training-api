@@ -20,6 +20,10 @@ var Note = mongoose.model('Note',{
   isActive:{
     type:Boolean,
     default:true
+  },
+  createdBy:{
+    type: mongoose.Schema.Types.ObjectId,
+    required: true
   }
 });
 
