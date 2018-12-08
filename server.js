@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.post('/note',authenticate,(req,res) => {
   
   var note = new Note({
+    title:req.body.title,
     text:req.body.text,
     createdOn:new Date(),
     lastModifiedOn:new Date(),
